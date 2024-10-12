@@ -8,7 +8,7 @@ FILENAME = "subject_data.txt"
 
 def main():
     data = load_data()
-    print(data)
+    display_subject_data(data)
 
 
 def load_data():
@@ -21,8 +21,11 @@ def load_data():
         parts[2] = int(parts[2])  # Make the number an integer (ignore PyCharm's warning)
         data_list.append([parts[0], parts[1], parts[2]])
     return data_list
-
     input_file.close()
+
+def display_subject_data(data):
+    for item in data:
+        print(f"{item[0]} is taught by {item[1]} and has {item[2]} students")
 
 
 main()
