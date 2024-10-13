@@ -1,8 +1,13 @@
 def main():
     numbers = []
-    for _ in range(5):
-        num = int(input("Number: "))
+    count = 1
+
+    while count > 0 :
+        num = float (input(f"Number{count}: "))
+        if num < 0:
+            break
         numbers.append(num)
+        count = count + 1
 
     print("The first number is", numbers[0])
     print("The last number is", numbers[-1])
