@@ -3,18 +3,21 @@ CP1404/CP5632 Practical
 State names in a dictionary
 File needs reformatting
 """
+from sys import excepthook
+
+from select import error
 
 CODE_TO_NAME = {"QLD":"Queensland", "NSW":"New South Wales", "NT":"Northern Territory", "WA":"Western Australia",
                 "ACT":"Australian Capital Territory", "VIC":"Victoria", "TAS":"Tasmania", "SA":"South Australia"}
 print(CODE_TO_NAME)
+for code, name in CODE_TO_NAME.items():
+    print(f"{code} is {name}")
 
 state_code = input("Enter short state: ").upper()
 while state_code != "":
-    if state_code in CODE_TO_NAME:
+    try:
         print(state_code, "is", CODE_TO_NAME[state_code])
-    else:
+    except KeyError:
         print("Invalid short state")
     state_code = input("Enter short state: ").upper()
 
-for code, name in CODE_TO_NAME.items():
-    print(f"{code} is {name}")
