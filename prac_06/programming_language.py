@@ -1,7 +1,7 @@
 """
 CP5632 Practical 6
 Estimate: 30 minutes
-Actual:   minutes
+Actual:   26 minutes
 """
 
 class ProgrammingLanguage:

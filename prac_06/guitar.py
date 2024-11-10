@@ -1,7 +1,7 @@
 """
 CP5632 Practical 6
 Estimate: 30 minutes
-Actual:   36 minutes
+Actual:   42 minutes
 """
 
 class Guitar:

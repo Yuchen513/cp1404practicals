@@ -1,3 +1,9 @@
+"""
+CP5632 Practical 6
+Estimate: 30 minutes
+Actual:   26 minutes
+"""
+
 from programming_language import ProgrammingLanguage
 
 python = ProgrammingLanguage("Python", "Dynamic", True, 1991)
