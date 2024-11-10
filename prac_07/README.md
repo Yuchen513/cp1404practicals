@@ -8,9 +8,9 @@ I am an IT student in JCU.
 
 ## Clean Code
 
-- **Do not use anti patterns.
-- **Abnormal error checking is very useful for code.
-- **Follow the dry principle.
+- Do not use anti patterns.
+- Abnormal error checking is very useful for code.
+- Follow the dry principle.
 
 ## Helpful Links
 
